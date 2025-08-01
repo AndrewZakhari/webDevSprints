@@ -1,0 +1,223 @@
+:root{
+    --primary-color: #f38c24;
+    --secondary-color: #f9e8d4;
+    --text-dark: #1a1511;
+    --text-light: #6b5d51;
+    --background-light: #fdfaf7;
+    --card-background: #ffffff;
+}
+
+html{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--background-light);
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+footer {
+    background-color: #f8f8f8;
+    padding: 3rem 2rem 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-section a {
+    display: block;
+    color: #666;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #000;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #000;
+}
+
+footer > p {
+    text-align: center;
+    color: #666;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 480px){
+    html {
+        padding: 20px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .search {
+        width: 100%;
+        border: none;
+        border-radius: 1vh;
+        padding:10px;
+        background-color: var(--card-background);
+    }
+    .search input {
+        border: none;
+        width: 90%;
+    }
+    .search svg {
+        color: rgba(0, 0, 0, 0.8);
+        padding-right: 10px; 
+    }
+    .search input:focus {
+        outline: none;
+    }
+    #hotbar {
+        display: flex;
+        gap: 10px;
+    }
+    .hotbarItem:first-child {
+        background: var(--primary-color);
+        color: var(--secondary-color);
+    }
+    .hotbarItem{
+        padding-inline: 15px;
+        padding-block: 10px;
+        background-color: var(--secondary-color);
+        border-radius: 3vh;
+    }
+    .hotbarItem:hover {
+        cursor: pointer;
+    }
+    header{
+        display: flex;    
+        justify-content: left;
+        width: 100%;
+    }
+    .hamburger{
+        display:block;
+        position: absolute;
+        right: 30px;
+        top: 60px; 
+    }
+    nav a {
+        display:none;
+    }
+
+    .Featured {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+     }
+     .productsWrapper{
+        display: flex;
+        justify-content: space-between;
+     }
+     .product {
+        background: var(--card-background);
+        width: 45%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        border-radius: 1vh;
+        padding-block: 20px;
+     }
+    .productDescription {
+        text-align: center;
+        color: rgba(0, 0, 0, 0.5);
+        margin-block:0;
+     }
+     .productName {
+        margin-block:10px;
+        margin-inline: 5px;
+        text-align: center;
+     }
+     .product img {
+        width:70%;
+        border-radius: 1vh;
+     }
+     #Seasonal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+     }
+     footer {
+        background: var(--secondary-color);
+        margin: 4rem -20px -20px -20px;
+        padding: 2rem 20px 20px 20px;
+     }
+     footer .footer-content {
+        max-width: 100%;
+     }
+     footer .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+     }
+     footer .footer-links > div:nth-child(-n+2) {
+        flex: 1;
+        min-width: 120px;
+        max-width: 160px;
+     }
+     footer .footer-links > div:nth-child(3) {
+        flex-basis: 100%;
+        text-align: center;
+     }
+     footer .social-icons {
+        justify-content: center;
+     }
+     footer .footer-section h4 {
+        color: var(--text-dark);
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+     }
+     footer .footer-section a {
+        color: var(--text-light);
+     }
+     footer .footer-section a:hover {
+        color: var(--primary-color);
+     }
+     footer > p {
+        color: var(--text-light);
+        border-top: 1px solid var(--text-light);
+        opacity: 0.8;
+     }
+}
