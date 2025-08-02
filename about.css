@@ -1,0 +1,139 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutImg {
+    width:50vw;
+    height: 75vh;
+    border-radius: 1vh;
+}
+nav {
+    width: 100%;
+
+}
+.aboutHeader {
+    display:none;
+}
+.storyWrapper {
+    display: flex;
+    width: 50vw;
+}
+.profileWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    width: 50vw;
+  }
+ .profile {
+    width: 24vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile p {
+    margin-block: 5px;
+  }
+  
+    .profile img {
+        width: 100%;
+        border-radius: 1vh;
+    }
+    .position {
+        color: #f38c24;
+        font-weight: 600;
+    } 
+
+    .story {
+    padding-inline: 20px;
+    background: #fffaf0;
+  }
+  .story p{
+    color: rgba(74, 44, 42, 0.5);
+  }
+  .Team {
+    padding-inline: 20px;
+  }
+  .Team h2 {
+    text-align: center;
+    font-size: 2vw;
+  }
+  .name {
+    font-size: 1vw;
+  }
+
+@media (max-width: 480px) {
+    html{
+        padding: 0;
+        overflow-x: hidden;
+    }
+    body { 
+        margin: 0;
+        margin-top: 8px;
+        
+    }
+    nav {
+        width: 70%;
+    }
+    .hamburger {
+        top: 30px;
+        right: 20px;
+    }
+    header {
+        padding-left: 10px;
+        padding-top: 15px;
+        width: calc(100% - 10px);
+    }
+
+   .aboutImg {
+    height: 25vh;
+    width: 100%;
+   } 
+   .story {
+    padding-inline: 20px;
+    background: #fffaf0;
+  }
+  .storyWrapper {
+    width: 100%;
+  }
+  .story p{
+    color: rgba(74, 44, 42, 0.5);
+  }
+  .Team {
+    padding-inline: 20px;
+  }
+  .Team h2 {
+    margin-block: 20px;
+  }
+  .profileWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width : 100%;
+  }
+  .profile {
+    width: 45%;
+  }
+  .profile p {
+    margin-block: 5px;
+    text-align: center;
+  }
+  
+    .profile img {
+        width: 100%;
+        border-radius: 1vh;
+    }
+    .position {
+        color: #f38c24;
+        font-weight: 600;
+    } 
+    .Team h2 {
+        font-size: 10vw;
+    }
+    .name {
+        font-size: 7vw;
+    }
+    .postion {
+        text-align: center;
+    }
+}

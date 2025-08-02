@@ -1,0 +1,149 @@
+
+
+h3 {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: var(--text-dark);
+}
+
+.Featured {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.featuredProduct {
+    position: relative;
+    background: var(--card-background);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featuredProduct:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.featuredProduct img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.featuredProduct .productName {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: var(--text-dark);
+}
+
+.featuredProduct .productDescription {
+    margin: 0 1rem 1rem;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.products {
+    max-width: var(--max-width);
+    margin: 2rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.product {
+    background: var(--card-background);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.product .productName {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.product .productDescription {
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.product .productPrice {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+
+@media (max-width: 850px) {
+ 
+    h3 {
+        padding-left: 0;
+        font-size: 1.5rem;
+    }
+
+    .Featured {
+        display: flex;
+        gap: 20px;
+        padding: 0;
+       
+    }
+    #hotbar {
+         width:100%;
+        overflow-x: scroll;
+    }
+
+    .featuredProduct {
+        width: 50%;
+    }
+
+    .featuredProduct img {
+        height: 20vh;
+    }
+
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .product {
+        width: 100%;
+        padding-block: 20px;
+    }
+
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+}
